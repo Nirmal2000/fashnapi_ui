@@ -5,7 +5,8 @@ import { formatApiParameterName } from '../lib/utils';
 
 const SELECT_OPTIONS = {
   garment_photo_type: ['auto', 'flat-lay', 'model'],
-  category: ['auto', 'tops', 'bottoms', 'one-pieces']
+  category: ['auto', 'tops', 'bottoms', 'one-pieces'],
+  mode: ['performance', 'balanced', 'quality']
 };
 
 export default function ParameterToggles({ parameters, onChange }) {

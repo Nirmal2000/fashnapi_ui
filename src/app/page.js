@@ -18,13 +18,10 @@ export default function Home() {
   
   // Default API parameters
   const [parameters, setParameters] = useState({
-    cover_feet: false,
-    adjust_hands: false,
-    restore_background: false,
-    restore_clothes: false,
     garment_photo_type: 'auto',
-    long_top: false,
     category: 'auto',
+    segmentation_free: false,
+    mode: 'balanced', // Can be 'performance', 'balanced', or 'quality'
   });
 
   // Load API token from localStorage on component mount
@@ -63,7 +60,7 @@ export default function Home() {
         model_image: modelImage,
         garment_image: garmentImage,
         moderation_level: 'permissive',
-        mode: 'quality',
+        mode: parameters.mode,
         ...parameters
       };
       
