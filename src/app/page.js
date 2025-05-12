@@ -14,7 +14,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [progress, setProgress] = useState(0);
   const [error, setError] = useState(null);
-  const [apiToken, setApiToken] = useState('fa-isXawHSOPuvr-IwxXKdyMw6FlaQ3SwThGUgCH');
+  const [apiToken, setApiToken] = useState('fa-FvnTXPgvoYo5-4v6W9fr1s44K5gbXAjDfrkiI');
   
   // Default API parameters
   const [parameters, setParameters] = useState({
